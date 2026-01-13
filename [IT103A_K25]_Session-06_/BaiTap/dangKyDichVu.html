@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký lịch khám</title>
+    <link rel="stylesheet" href="./All.css">
+</head>
+
+<body>
+    <header>
+        <h1>Danh sách dịch vụ</h1>
+        <div class="div--menu">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./dichVuNhaKhoa.html">Dịch vụ</a>
+            <a href="#" class = "selected">Đăng ký lịch khám</a>
+        </div>
+    </header>
+    <main>
+
+        <section class="section--form">
+            <form action="./dangKyDichVu.html" method="post">
+            <div class="div--name">
+                <label for="name">Họ và tên</label>
+                <input id="name" type="text" placeholder="Nhập họ tên">
+            </div>
+            <div class="div--email">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example@gmail.com">
+            </div>
+            <div class="div--telephone">
+                <label for="phone">số điện thoại</label>
+                <input id="phone" type="tel" pattern="^0[35789]\d{8}$">
+            </div>
+            <div class="div--telephone">
+                <label for="phone">số điện thoại</label>
+                <input id="phone" type="tel" pattern="^0[35789]\d{8}$">
+            </div>
+            <div class="div--server">
+                <label for="server">Chọn dịch vụ</label>
+                <select id="server">
+                    <option value="Khám răng tổng quát" selected>Khám răng tổng quát</option>
+                    <option value="Lấy cao răng">Lấy cao răng</option>
+                    <option value="Tẩy trắng răng">Tẩy trắng răng</option>
+                    <option value="Niềng răng">Niềng răng</option>
+                </select>
+            </div>
+            <div class="div--examinationDate">
+                <label for="Date">Ngày khám</label>
+                <input id="Date" type="date">
+            </div>
+            <div class="div--moreInfo">
+                <label for="Info">Ghi chú thêm</label>
+                <textarea name="Yêu cầu: " placeholder="Yêu cầu thêm..." id="Info"></textarea>
+            </div>
+            <div class="div--submit">
+                <button type="submit">Gửi đăng ký</button>
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Nha Khoa Chăm Sóc Nụ Cười Việt</p>
+        <p>Địa chỉ: 123 Đường Nụ Cười - Hotline: 0900 000 000</p>
+    </footer>
+</body>
+
+</html>

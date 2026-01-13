@@ -1,0 +1,151 @@
+* {
+    background-color: #f0f9ff;
+}
+
+header h1 {
+    background-color: hsl(167, 85%, 89%);
+    text-align: center;
+    color: #0f766e;
+}
+
+.div--menu {
+    text-align: center;
+    background-color: #e0f2fe;
+
+    margin-bottom: 20px;
+}
+
+.div--menu a {
+    color: #0369b6;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 10px;
+    background-color: #e0f2fe;
+}
+
+.div--menu a.selected{
+    background-color: #0284c7;
+    color: white;
+}
+
+.div--menu a:hover {
+    background-color: #0284c7;
+    color: white;
+}
+.banner {
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
+img {
+    width: 800px;
+}
+
+.Section h2 {
+    color: #155e75;
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+.Section h2,
+p,
+ul,
+li {
+    background-color: white;
+}
+
+.Section {
+    background-color: white;
+    padding: auto;
+}
+
+.Section li:hover {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+
+footer {
+    background-color: #0f766e;
+    padding: 1.6px 0px;
+}
+
+footer p {
+    background-color: #0f766e;
+    color: white;
+    text-align: center;
+    line-height: 1px;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+th {
+    background-color: #bae6fd;
+    color: #075985;
+    padding: 20px;
+    text-align: center;
+}
+
+td {
+    background-color: #f8fafc;
+    padding: 20px;
+}
+
+tr:hover td {
+    background-color: #e0f2fe;
+}
+
+.section--form form div {
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section--form form label {
+    background-color: #f8fafc;
+    display: block;
+    color: #134e4a;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section--form form input,
+.section--form form textarea,
+.section--form form select {
+    display: block;
+    font-size: 18px;
+    margin: auto;
+    background-color: #f8fafc;
+}
+
+.section--form input:focus,
+.section--form select:focus,
+.section--form textarea:focus {
+    background-color: #ecfeff;
+}
+
+.section--form textarea::placeholder {
+    color: #64748b;
+}
+
+.div--submit button {
+    background-color: #0ea5a4;
+    width: 17%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.div--submit button:hover {
+    background-color: #0f766e;
+}
