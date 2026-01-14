@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Header {
+    /* background: linear-gradient(135deg, #1a73e9 0%, #0e3c7a 100%, #10458b 50%, #0e3e7e 50%, #0e3a77 50%); */
+    background: linear-gradient(122deg, #011837 16%, #2a56bb 58%, #7d2181 92%, #cd2d2d 100%);
+    padding: 30px 130px 20px;
+}
+
+.Header div {
+    margin-top: 20px;
+}
+
+.Sologan {
+    border: 1px solid white;
+    max-width: fit-content;
+    padding: 6px;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.one {
+    color: white;
+}
+
+.inside {
+    width: 70%;
+}
+
+.inside p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Two {
+    margin-bottom: 30px;
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: max-content;
+    background-color: #1a73e8;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 12px;
+    border-style: none;
+    transition: background-color 0.3s ease-out,
+        transform 0.2s ease-out;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.box:active {
+    transform: translateZ(-20px);
+}
+
+.three div {
+    margin-top: 2px;
+}
+
+.Box2 {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-style: none;
+    background: rgba(255, 255, 255, 0.08);
+    width: 20%;
+    border-radius: 16px;
+    padding: 14px 16px;
+    line-height: 30px;
+    transition: transform 0.5s ease-out;
+}
+
+.Box2:hover {
+    transform: translateY(-5px);
+}
+
+.Content {
+    padding: 10px 130px 30px;
+}
+
+.Content div {
+    margin-top: 50px;
+}
+
+.Four {
+    border: 1px solid #e6eef8;
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.2px 5px rgba(98, 77, 119, 0.5);
+    width: 100%;
+}
+.Box3{
+    transition: transform 0.5s linear;
+}
+.Box4 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #dfebfc;
+    padding: 2px 15px;
+    border-radius: 20px;
+    border: 2px solid #b1cef7;
+    font-size: 8px;
+    color: #1a73e8;
+}
+
+.Box3 div {
+    margin-top: 0px;
+}
+
+.Four {
+    position: relative;
+}
+
+.Four {
+    line-height: 25px;
+}
+
+.fith {
+    padding: 5px 20px;
+}
+li{
+    transition: transform 0.6s ease-out;
+}
+.fith li:hover {
+    transform: translateX(5px);
+}
+.Box3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 2px 10px rgb(111, 231, 163);
+}
+.Box3 a{
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s linear;
+    color: #1a73e8;
+    font-weight: bold;
+}
+.Box3 a:hover{
+    transform: translateX(5px);
+}

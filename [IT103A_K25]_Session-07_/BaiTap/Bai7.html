@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai7</title>
+    <link rel="stylesheet" href="./Bai7.css">
+</head>
+
+<body>
+    <section class="section--formSignIn">
+        <header>
+            <h1>Biểu Mẫu Feedback Phòng Khám Nha Khoa</h1>
+        </header>
+        <main>
+            <form action="./Bai1.html" method="post">
+                <label for="name">Họ và tên</label>
+                <input type="text" placeholder="Nhập họ tên" id="name" name="Họ và tên">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="nameEmail" placeholder="example@gmail.com">
+                <br>
+                <label for="serverce">Dịch vụ đăng ký</label>
+                <select name="Dịch vụ" id="serverce">
+                    <option value="Khám răng tổng quát" selected>Khám răng tổng quát</option>
+                    <option value="Thay răng sứ">Thay răng xứ</option>
+                    <option value="Mát xa lành mạnh">Mát xa lành mạnh</option>
+                </select>
+                <br>
+                <label for="satisfaction">Mức độ hài lòng</label>
+                <select name="Mức độ hài lòng" id="satisfaction">
+                    <option value="Rất hài lòng" selected>Rất hài lòng</option>
+                    <option value="khá hài lòng">Khá hài lòng</option>
+                    <option value="Không hài lòng">Không hài lòng</option>
+                </select>
+                <br>
+                <label for="respon">Nội dung phản hồi</label>
+                <textarea name="Nội dung phản hôig" id="respon" placeholder="Hãy cho chúng tôi biết cảm nhận của bạn..." rows="6" ></textarea>
+                <button type="submit">Gửi feedback</button>
+            </form>
+        </main>
+    </section>
+</body>
+
+</html>

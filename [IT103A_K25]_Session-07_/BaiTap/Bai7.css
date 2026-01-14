@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section--formSignIn {
+    justify-content: center;
+    border: 1px solid black;
+    width: 45%;
+    margin: 10px auto auto;
+    text-align: left;
+    padding: 20px 20px 15px;
+}
+
+header h1 {
+    text-align: center;
+    color: #0f756d;
+}
+
+form label {
+    display: block;
+    color: #134f4b;
+    margin: 10px 0px 5px;
+    font-weight: bold;
+}
+
+form input,
+select {
+    width: 100%;
+    height: 30px;
+}
+
+form textarea {
+    width: 100%;
+}
+
+form input,
+select,
+textarea::placeholder {
+    padding: 5px;
+}
+
+form input,
+select,
+textarea {
+    border-radius: 5px;
+    border-style: solid;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid red;
+    border-style: none;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #0ea5a4;
+    color: #fefefc;
+    transition: background-color 1s ease-out;
+    transition: transform 0.5s linear;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: red;
+    transform: translateY(-3px);
+}
