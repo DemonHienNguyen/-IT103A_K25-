@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+}
+
+body div {
+    padding-top: 20px;
+}
+
+.Header {
+    background-color: #0ea5e9;
+    text-align: center;
+    color: white;
+    height: 150px;
+    padding: 30px;
+    line-height: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #e0f2fe;
+    padding-bottom: 15px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: #0369a1;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.menu a:hover {
+    background-color: #0284c7;
+    padding: 10px 20px;
+    color: white;
+}
+
+.Box1 {
+    margin: 10px 20px;
+    background-color: white;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.Box2 {
+    margin: 10px 20px;
+    margin-top: 20px;
+    background-color: #ecfeff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #0ea5e9;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.Box2 li{
+    list-style: none;
+}
+.Footer{
+    background-color: #0f172a;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
