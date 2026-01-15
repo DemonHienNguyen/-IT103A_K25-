@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #fff7ed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+header .first {
+    background-color: #fde68a;
+    padding: 30px 30px 30px;
+    text-align: center;
+    line-height: 35px;
+}
+
+header .first h1 {
+    color: #78350f;
+    font-weight: 760;
+}
+
+.menu {
+    text-align: center;
+    padding: 10px 10px;
+    background: linear-gradient(312deg, rgba(191, 137, 78, 1) 8%, rgba(254, 215, 170, 1) 42%, rgba(237, 209, 255, 255) 72%, rgba(104, 88, 63, 1) 96%)
+}
+.menu a{
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #7c2d12;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.5s ease-out;
+}
+.menu a:hover{
+    background-color: #c2410c;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+}
+.One{
+    position: relative;
+}
+.One img{
+    width: 100%;
+    height: 420px;
+    object-position: center;
+    object-fit: cover;
+}
+.textBar{
+    padding: 20px 20px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: 25%;
+    bottom: 40px;
+    right: 40px;
+}
+.textBar2{
+    left: 40px;
+}
+.textBar h2{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.textBar p{
+    line-height: 25px;
+}
+.Two{
+    text-align: center;
+    margin: 50px 50px 90px;
+    color: #78350f;
+}
+.Two h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.Two .DoctorCard{
+    display: inline-block;
+    background-color: white;
+    width: 20%;
+    height: 40%;
+    padding: 30px 0px;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    box-shadow: 0px 7px 2px  rgba(0, 0, 0,0.2);
+    transition: all 0.3s ease-out;
+}
+.DoctorCard h3{
+    font-weight: bold;
+}
+.Two .DoctorCard:hover{
+    transform: translateY(-10px);
+    background-color: #fffbeb;
+}
+.Three{
+    text-align: center;
+    margin: 20px 10px;
+    line-height: 30px;
+}
+.Three h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #78350f;
+}
+.list{
+    margin-top: 30px;
+}
+.list ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.list ul li{
+    font-size: 20px;
+    line-height: 35px;
+}
+.list ul li::before{
+    content: "✓ ";
+}
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: #78350f;
+    margin-top: 20px;
+    padding: 20px;
+}
+footer p{
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+.content{
+    text-align: center;
+    justify-items: center;
+}
+.content p, li{
+    color: #3f2a3e;
+    font-size: 20px;
+}
+.content h2{
+    color:#78350f;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.content div{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.div--Content1{
+    width: 90%;
+}
+.div--Content2 ul li{
+    line-height: 30px;
+    list-style: none;
+}
+.Hero{
+    text-align: center;
+    margin-top: 40px;
+}
+.Hero div{
+    display: inline-block;
+    border: 1px solid white;
+    margin: 15px;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 2px 3px 0.5px 9px rgba(0, 0, 0,0.02);
+}
+.Hero h2{
+    color: #7c2d12;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.HeroCard img{
+    width: 170px;
+    height: 190px;
+    object-fit: cover;
+    padding-bottom: 20px;
+    border-radius: 50%;
+}
+.HeroCard h2{
+    color: #78350f;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.HeroCard p{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.HeroCard{
+    transition: all 0.3s ease-out;
+}
+.HeroCard:hover{
+    background-color: rgb(255, 248, 219);
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 2px gold;
+}
