@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý thư viện</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <section class="section--introdu">
+      <div class="heading">
+        <h1>📚 THƯ VIỆN SINH VIÊN</h1>
+        <nav class="nav--menu">
+          <a href="#introduce">Trang Chủ</a>
+          <a href="#Books">Sách</a>
+          <a href="#Borrow">Mượn sách</a>
+          <a href="#">Liên Hệ</a>
+        </nav>
+      </div>
+    </section>
+    <div class="div--banner">
+      <img src="../Source/banner.jpg" alt="Banner">
+      <div class="div--textBanner">
+        <h2>Hệ thống quản lý thư viện</h2>
+        <span>📖 Tri thức - Kết nối - Phát triển</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section--content" id="introduce">
+      <div class="boxer section_div--firstContent">
+        <h2>📘 Giới thiệu thư viện</h2>
+        <p>Thư viện sinh viên là nơi lưu trữ và cung cấp các tài liệu học tập, nghiên cứu phục vụ sinh viên và giảng
+          viên trong nhà trường.</p>
+      </div>
+      <div class="boxer section_div--Booklist" id="Books">
+        <h2>📚 Danh mục sách</h2>
+        <div class="div--Books">
+          <div class="Box Book1">
+            <div class="div--baner">NEW</div>
+            <div class="div--image">
+              <img src="../Source/first book.jpg" alt="Lập trình web">
+            </div>
+            <div class="div--content">
+              <h3>Lập trình Web</h3>
+              <span>Thể loại: CNTT</span>
+            </div>
+          </div>
+          <div class="Box Book2">
+            <div class="div--image">
+              <img src="../Source/second book.jpg" alt="Cơ sở dữ liệu">
+            </div>
+            <div class="div--content">
+              <h3>Cơ sở dữ liệu</h3>
+              <span>Thể loại: CNTT</span>
+            </div>
+          </div>
+          <div class="Box Book3">
+            <div class="div--baner"><p>HOT</p></div>
+            <div class="div--image">
+              <img src="../Source/third book.jpg" alt="Kỹ năng học tập">
+            </div>
+            <div class="div--content">
+              <h3>Kỹ năng học tập</h3>
+              <span>Thể loại: Kỹ năng</span>
+            </div>
+          </div>
+          <div class="Box Book4">
+            <div class="div--image">
+              <img src="../Source/forth book.jpg" alt="Toán rời rạc">
+            </div>
+            <div class="div--content">
+              <h3>Toán rời rạc</h3>
+              <span>Thể loại: Toán học</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxer section_div--manageBook">
+        <h2>📊 Quản lý sách</h2>
+        <table class="table--bookShell">
+          <thead>
+            <tr>
+              <th>Mã sách</th>
+              <th>Tên Sách</th>
+              <th>Tác giả</th>
+              <th>Tình trạng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>S001</td>
+              <td>Lập trình Web</td>
+              <td>Nguyễn Văn A</td>
+              <td>Còn</td>
+            </tr>
+            <tr>
+              <td>S002</td>
+              <td>Cơ sở dữ liệu </td>
+              <td>Trần Thị B</td>
+              <td>Hết</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="boxer section_div--BorrowBook" id="Borrow">
+        <h2>📝 Mượn sách</h2>
+        <form action="./index.html" method="post">
+          <input type="text" placeholder="Họ và tên" />
+          <input type="text" placeholder="Mã sinh viên" />
+          <input type="text" placeholder="Tên sách cần mượn" />
+          <button type="submit">Gửi yêu cầu</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Thư viện Sinh viên</p>
+  </footer>
+</body>
+
+</html>
