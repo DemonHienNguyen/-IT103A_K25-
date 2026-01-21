@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FA;
+    align-items: center;
+    gap: 50px;
+}
+main{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+.div--fistprice{
+    background-color: #6366F11A;
+    color: #6366F1;
+    text-align: center;
+    width: max-content;
+    padding: 5px 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.div--fistprice p{
+    font-weight: 700;
+}
+.div--Header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.div--Header p{
+    opacity: 0.6;
+}
+.div--Header h1{
+    font-size: 40px;
+}
+.div--PriceCard{
+    width: 440px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.25s linear;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.div--PriceCard:hover{
+    margin: 10px 30px;
+    transform: translateY(-5px);
+    box-shadow: 2px 5px  10px rgb(192, 226, 123);
+    border: 2px solid blue;
+}
+.div--PriceCard hr{
+    opacity: 0.5;
+}
+.div--Benefit a:hover{
+    background-color: #0D6EFD;
+    color: white;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.div--text{
+    display: flex;
+    align-items: baseline;
+}
+.div--text h1{
+    font-size: 50px;
+    color: #6366F1;
+}
+.div--text p{
+    opacity: 0.6;
+}
+.div--Benefit{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.access{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.div--Benefit a{
+    width: 100%;
+    border: 1px solid #0D6EFD;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0D6EFD;
+    transition: all 0.25s linear;
+}
+@media screen and (max-width: 1024px) {
+    .div--PriceCard{
+        width: calc(30%-20px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .div--PriceCard{
+        width: 100%;
+    }
+    .div--Header h1{
+        font-size: 30px;
+    }
+    main{
+        padding: 32px;
+    }
+}
+@media (max-width: 328px) {
+    .div--Header h1{
+        font-size: 20px;
+    }
+    .div--PriceCard{
+        width: 100%;
+    }
+    main{
+        padding: 32px;
+    }
+}
