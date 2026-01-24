@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 98px - 50px);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.Head {
+    background-color: #212529;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.List{
+    display: none;
+}
+.List a{
+    font-size: 30px;
+}
+
+.Head nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.Hero {
+    background: #0d6efd;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextBanner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.TextBanner h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.TextBanner p {
+    color: white;
+}
+
+.Sign {
+    margin-top: 30px;
+}
+
+.TextBanner a {
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.ListBenefit {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.CardText {
+    line-height: 30px;
+}
+
+.CardText h3 {
+    font-size: 26px;
+}
+
+.SignNow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.SignNow h2 {
+    font-size: 30px;
+}
+
+.SignNow input {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+}
+
+.SignNow input:nth-child(4) {
+    background-color: #198754;
+    color: white;
+    outline: none;
+}
+
+footer {
+    height: 50px;
+    background-color: #212529;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .Head nav{
+        display: none;
+    }
+    .List{
+        display: block;
+    }
+    .ListBenefit{
+        flex-direction: column;
+    }
+    .Card{
+        width: 100%;
+    }
+    .SignNow h2{
+        font-size: 25px;
+    }
+    .SignNow{
+        padding: 20px;
+        width: 300px;
+    }
+}

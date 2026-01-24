@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list-card{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 5px 2px 10px rgba(0, 0, 0,0.3);
+}
+.imgBanner{
+    position: relative;
+}
+.imgBanner img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.Banner{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.Banner h4{
+        font-size: 14px;
+}
+.Banner1{
+    background-color: #3b82f6;
+}
+.Text-Card{
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.Text-Card h6{
+    background-color: #ced3d8;
+    color: #3b82f6;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.Decep{
+    line-height: 32px;
+}
+.Decep p{
+    font-size: 14px;
+}
+.Processs{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(206, 211, 216,0.4);
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.TextProcess{
+    display: flex;
+    justify-content: space-between;
+}
+.Process{
+    width: 100%;
+    height: 10px;
+    background-color: #f9fafb;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.ProcessBar{
+    width: 20%;
+    background-color:#3b82f6;
+    height: 10px;
+}
+.HaveStu{
+    display: flex;
+    justify-content: space-between;
+}
+.NavBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.NavBar a{
+    flex: 10;
+    text-align: center;
+    background-color: #6366f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.NavBar img{
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(48, 44, 44);
+    border-radius: 5px;
+}
+.Banner2{
+    background-color: rgb(41, 233, 41);
+}
+.ProcessBar1{
+    width: 100%;
+    background-color: greenyellow;
+}
+.NavBar1 a{
+    background: white;
+    border: 1px solid #6366f1;
+    color: #6366f1;
+}
+.Banner3{
+    background-color: orangered;
+}
+.Info{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.In{
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+}
+.Price{
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 10px ;
+}
+.Price p:nth-child(1){
+    font-size: 20px;
+    color: #6366f1;
+    font-weight: 700;
+}
+.Price p:nth-child(2){
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+    .list-card{
+        flex-direction: column;
+        padding: 32px;
+    }
+    .Card{
+        width: 100%;
+    }
+}

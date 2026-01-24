@@ -1,0 +1,19 @@
+body{
+    background-color: #f8f9fa;
+}
+.form-box{
+    background-color: white;
+    padding: 32px;
+    width: 600px;
+}
+.col-costom label {
+    display: inline;
+}
+@media screen and (max-width:350px){
+    .col-costom{
+        text-align: center;
+    }
+    .col-costom a{
+     text-align: center !important;
+}
+}
