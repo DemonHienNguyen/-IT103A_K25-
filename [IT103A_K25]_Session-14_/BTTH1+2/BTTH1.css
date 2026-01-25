@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: calc(100vh - 120px - 290px);
+}
+
+main {
+    padding: 100px;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+
+.Head {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid rgba(159, 157, 157, 0.3);
+}
+
+.Logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Head nav {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.Head nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    transition: all 0.2s linear;
+    padding: 50px 0;
+}
+
+.Head nav a:hover {
+    color: #518581;
+    border-bottom: 3px solid #518581;
+}
+
+.Logo2 {
+    display: flex;
+    gap: 20px;
+}
+
+.MenuList {
+    display: none;
+}
+
+.first-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.Banner {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(164, 168, 173);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Banner img {
+    padding: 50px;
+}
+
+.second-sec {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.Card {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Card h1 {
+    font-size: 60px;
+    color: #518581;
+}
+
+/* .TextCard {
+    width: 350px;
+} */
+
+.TextCard h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.TextCard p {
+    opacity: 0.6;
+}
+
+.Third-sec {
+    display: flex;
+    margin-top: 200px;
+    gap: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.First-Text {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.First-Text h4 {
+    color: #FFB23F;
+}
+
+.sec-Text {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec-Text h3 {
+    color: #518581;
+}
+
+.sec-Text p {
+    opacity: 0.6;
+    line-height: 25px;
+}
+
+.Four-sec {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img {
+    position: relative;
+}
+.Img-Text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.Img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Img2 img{
+    object-fit: cover;
+}
+
+.fith-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.fith-sec a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #518581;
+    padding: 10px 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 120px;
+    height: 290px;
+    gap: 100px;
+}
+
+.first-fot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-fot p {
+    line-height: 25px;
+}
+
+.sec-fot {
+    display: flex;
+    gap: 50px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .Head nav,
+    .Head .Logo2 {
+        display: none;
+    }
+    .Banner img{
+        width: 100%;
+        height: 350px;
+    }
+
+    .MenuList {
+        display: block;
+    }
+
+    .second-sec {
+        flex-direction: column;
+    }
+    .Third-sec{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Four-sec{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Img2 {
+        gap: 20px;
+    }
+    .Four-sec img{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+    }
+    .fith-sec{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
