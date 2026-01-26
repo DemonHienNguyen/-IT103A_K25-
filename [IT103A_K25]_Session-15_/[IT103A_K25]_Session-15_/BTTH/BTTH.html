@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTTH</title>
+    <link rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./BTTH.css">
+</head>
+
+<body>
+    <header>
+        <div class="div--Header">
+            <div class="div--imgLogo">
+                <a href="">
+                    <img src="../srouce/Rikkei Education Logo.png" alt="" />
+                </a>
+            </div>
+            <nav>
+                <a href="">Trang chủ</a>
+                <a href="">Khóa học</a>
+                <a href="">Giới thiệu</a>
+                <a href="">Liên hệ</a>
+            </nav>
+            <div class="div--Button">
+                <button>Đăng nhập</button>
+                <button>Đăng ký</button>
+            </div>
+        </div>
+        <div class="div--Breadcrumb">
+            <p>
+                <a href="" class="op">Trang chủ</a> > <a href="" class="op">Khóa học</a> > <b><a href="">Lập trình
+                        web</a></b>
+            </p>
+        </div>
+        <div class="div--Course-Header">
+            <div class="Text">
+                <div class="Course-head">
+                    <p>Lập trình</p>
+                </div>
+                <div class="Textnum1">
+                    <h1>Lập Trình Web Từ Cơ Bản Đến Nâng
+                        Cao</h1>
+                    <p>Học HTML, CSS, JavaScript và các framework hiện đại để trở thành Web Developer
+                        chuyên nghiệp</p>
+                    <div class="div--status">
+                        <div class="stat1">
+                            <img src="../srouce/⭐.png" alt="">
+                            <span>4.9 (2,345 đánh giá)</span>
+                        </div>
+                        <div class="stat2">
+                            <span><b>12,567</b> học viên</span>
+                        </div>
+                        <div class="stat3">
+                            <img src="../srouce/📅.png" alt="">
+                            <span>Cập nhập: <b>Tháng 12/2025</b></span>
+                        </div>
+                        <div class="stat4">
+                            <img src="../srouce/🌐.png" alt="">
+                            <span>Tiếng Việt</span>
+                        </div>
+                    </div>
+                    <div class="div--status2">
+                        <div class="Arvatar">
+                            <img src="../srouce/Nguyễn Văn A.png" alt="">
+                        </div>
+                        <div class="Infor">
+                            <p>Giảng viên</p>
+                            <h3>Nguyễn Văn A</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Card-Course">
+                <div class="Card-Banner">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </div>
+                <div class="Text-Card">
+                    <div class="Price-Card">
+                        <div class="OriginPrice">
+                            <h1>1,999,000đ</h1>
+                            <p>2,999,000đ</p>
+                        </div>
+                        <div class="Sale">
+                            <h4>Giảm 33%</h4>
+                        </div>
+                    </div>
+                    <div class="div--daybefore">
+                        <img src="../srouce/⏰.png" alt="">
+                        <span>Ưu đãi kết thúc sau 2 ngày</span>
+                    </div>
+                    <div class="div--button">
+                        <button>Đăng ký ngay</button>
+                        <Button>Thêm vào giỏ hàng</Button>
+                    </div>
+                    <div class="TheInforCard">
+                        <h3>Khóa học bao gồm</h3>
+                        <ul style="list-style: none;">
+                            <li>40 giờ video học</li>
+                            <li>25 bài tập thực hành</li>
+                            <li>Truy cập trên mọi thiết bị</li>
+                            <li>Truy cập trọn đời</li>
+                            <li>Chứng chỉ hoàn thành</li>
+                            <li>Hỗ trợ 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="Camket">
+                        <span>Hoàn tiền 100% trong 30 ngày</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-content-section">
+            <div class="container main-layout">
+                <div class="left-column">
+                    <div class="content-box learn-outcomes">
+                        <h2>Bạn sẽ học được gì</h2>
+                        <div class="outcomes-grid">
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Nắm vững HTML5 và CSS3 để xây
+                                dựng
+                                giao diện web hiện đại</div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Lập trình JavaScript từ cơ bản
+                                đến
+                                nâng cao</div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Sử dụng thành thạo React.js để
+                                xây
+                                dựng ứng dụng web</div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Thiết kế responsive cho mọi
+                                thiết bị
+                            </div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Làm việc với API và xử lý dữ
+                                liệu
+                            </div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Triển khai website lên hosting
+                                và
+                                domain</div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Xây dựng 5+ dự án thực tế để bổ
+                                sung
+                                portfolio</div>
+                            <div class="outcome-item"><i class="fa-solid fa-check"></i> Áp dụng best practices và coding
+                                standards</div>
+                        </div>
+                    </div>
+
+                    <div class="content-box description">
+                        <h2>Mô tả khóa học</h2>
+                        <p>Chào mừng bạn đến với khóa học <strong>Lập Trình Web Từ Cơ Bản Đến Nâng Cao</strong> - khóa
+                            học
+                            toàn diện nhất về phát triển web tại Rikkei Education!</p>
+                        <p>Khóa học này được thiết kế dành cho những người mới bắt đầu muốn trở thành Web Developer
+                            chuyên
+                            nghiệp. Bạn sẽ được học từ những kiến thức cơ bản nhất về HTML, CSS cho đến các công nghệ
+                            hiện
+                            đại như React.js, Node.js.</p>
+
+                        <h3>Tại sao nên chọn khóa học này?</h3>
+                        <ul>
+                            <li><strong>Học từ cơ bản:</strong> Không cần kiến thức nền tảng, bạn sẽ được hướng dẫn từng
+                                bước một.</li>
+                            <li><strong>Thực hành nhiều:</strong> Mỗi bài học đều có bài tập và dự án thực tế.</li>
+                            <li><strong>Giảng viên kinh nghiệm:</strong> Được giảng dạy bởi các chuyên gia có hơn 10 năm
+                                kinh nghiệm.</li>
+                            <li><strong>Cập nhật liên tục:</strong> Nội dung được cập nhật theo xu hướng công nghệ mới
+                                nhất.
+                            </li>
+                            <li><strong>Hỗ trợ tận tình:</strong> Đội ngũ hỗ trợ sẵn sàng giải đáp mọi thắc mắc 24/7.
+                            </li>
+                        </ul>
+
+                        <h3>Sau khóa học, bạn có thể:</h3>
+                        <ul>
+                            <li>Tự tin xây dụng các website hoàn chỉnh từ A-Z</li>
+                            <li>Ứng tuyển vào các vị trí Junior/Mid-level Web Developer</li>
+                            <li>Freelance và nhận các dự án web development</li>
+                            <li>Tiếp tục học các khóa nâng cao về Full-stack Development</li>
+                        </ul>
+                        <p>Đăng ký ngay hôm nay để bắt đầu hành trình trở thành Web Developer chuyên nghiệp!</p>
+                    </div>
+
+                    <div class="content-box curriculum">
+                        <h2>Nội dung khóa học</h2>
+                        <p class="curriculum-meta">8 phần • 67 bài học • 40 giờ học</p>
+
+                        <div class="accordion">
+                            <details open>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 1: Giới
+                                        thiệu và
+                                        Cơ bản HTML</span>
+                                    <span class="summary-meta">5 bài học • 3 giờ</span>
+                                </summary>
+                                <ul class="lesson-list">
+                                    <li><i class="fa-regular fa-circle-play"></i> Giới thiệu khóa học và lộ trình học
+                                        <span>10:00</span>
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-play"></i> Cài đặt môi trường phát triển
+                                        <span>15:45</span>
+                                    </li>
+                                    <li><i class="fa-regular fa-file-code"></i> HTML cơ bản: Tags và Comments
+                                        <span>20:10</span>
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-play"></i> Làm việc với Text và Links
+                                        <span>20:15</span>
+                                    </li>
+                                    <li><i class="fa-regular fa-circle-play"></i> Images và Multimedia
+                                        <span>18:30</span>
+                                    </li>
+                                    <li><i class="fa-regular fa-pen-to-square"></i> Bài tập: Tạo trang HTML đầu tiên
+                                        <span>30:00</span>
+                                    </li>
+                                </ul>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 2: CSS Cơ
+                                        Bản và
+                                        Nâng Cao</span>
+                                    <span class="summary-meta">10 bài học • 5 giờ</span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 3:
+                                        Responsive
+                                        Design</span>
+                                    <span class="summary-meta">7 bài học • 4 giờ</span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 4:
+                                        JavaScript Cơ
+                                        Bản</span>
+                                    <span class="summary-meta">12 bài học • 6 giờ</span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 5:
+                                        JavaScript
+                                        Nâng Cao</span>
+                                    <span class="summary-meta">10 bài học • 5.5 giờ</span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 6: React.js
+                                        Fundamentals</span>
+                                    <span class="summary-meta">17 bài học • 7 giờ</span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 7: Làm việc
+                                        với
+                                        API</span>
+                                    <span class="summary-meta">6 bài học • 4 giờ</span>
+                                </summary>
+                            </details>
+                            <details>
+                                <summary>
+                                    <span class="summary-title"><i class="fa-solid fa-caret-down"></i> Phần 8: Dự Án
+                                        Cuối
+                                        Khóa và Triển Khai</span>
+                                    <span class="summary-meta">4 bài học • 5.5 giờ</span>
+                                </summary>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="content-box requirements">
+                        <h2>Yêu cầu</h2>
+                        <ul>
+                            <li>Máy tính có kết nối Internet</li>
+                            <li>Không cần kiến thức lập trình trước đó</li>
+                            <li>Tinh thần học hỏi và sẵn sàng thực hành</li>
+                            <li>Cam kết dành ít nhất 5-10 giờ/tuần để học</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-box audience">
+                        <h2>Khóa học dành cho ai</h2>
+                        <ul>
+                            <li>Người mới bắt đầu muốn học lập trình web</li>
+                            <li>Sinh viên ngành CNTT muốn nâng cao kỹ năng</li>
+                            <li>Người muốn chuyển nghề sang lập trình</li>
+                            <li>Freelance muốn mở rộng dịch vụ</li>
+                            <li>Designer muốn học code để tự implement design</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-box instructor">
+                        <h2>Giảng viên</h2>
+                        <div class="instructor-profile">
+                            <img src="../srouce/Nguyễn Văn A.png" alt="Instructor" class="instructor-avatar">
+                            <div class="instructor-info">
+                                <h3>Nguyễn Văn A</h3>
+                                <p class="instructor-role">Senior Full-stack Developer</p>
+                                <div class="instructor-stats">
+                                    <span><i class="fa-solid fa-star"></i> 4.9 Đánh giá</span>
+                                    <span><i class="fa-solid fa-user-graduate"></i> 45,678 Học viên</span>
+                                    <span><i class="fa-solid fa-play-circle"></i> 15 Khóa học</span>
+                                </div>
+                                <p class="instructor-bio">
+                                    Nguyễn Văn A là một Senior Full-stack Developer với hơn 10 năm kinh nghiệm trong
+                                    ngành
+                                    phát triển web. Anh đã làm việc cho nhiều công ty công nghệ lớn và tham gia xây dựng
+                                    các
+                                    dự án quy mô lớn.<br><br>
+                                    Với niềm đam mê chia sẻ kiến thức, anh đã đào tạo hơn 45,000 học viên trên khắp Việt
+                                    Nam
+                                    và nhận được đánh giá cao về phương pháp giảng dạy dễ hiểu, thực tế.<br><br>
+                                    <strong>Chuyên môn:</strong> JavaScript, React.js, Node.js, MongoDB, AWS, Docker
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-box reviews">
+                        <h2>Đánh giá từ học viên</h2>
+
+                        <div class="review-summary">
+                            <div class="average-rating">
+                                <div class="rating-number">4.9</div>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="rating-total">2,245 đánh giá</div>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-bar-row">
+                                    <span>5 sao</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span>85%</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>4 sao</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 12%"></div>
+                                    </div>
+                                    <span>12%</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>3 sao</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>2 sao</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 1%"></div>
+                                    </div>
+                                    <span>1%</span>
+                                </div>
+                                <div class="rating-bar-row">
+                                    <span>1 sao</span>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span>0%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-list">
+                            <div class="review-item">
+                                <img src="../srouce/Trần Thị B.png" alt="User" class="user-avatar">
+                                <div class="review-content">
+                                    <h4>Trần Thị B</h4>
+                                    <div class="user-rating">★★★★★ <span class="review-date">2 tuần trước</span></div>
+                                    <p>Khóa học rất chi tiết và dễ hiểu. Giảng viên giải thích rất rõ ràng, từng bước
+                                        một.
+                                        Mình đã hoàn thành khóa học và tự tin làm được nhiều dự án web. Rất đáng tiền!
+                                    </p>
+                                    <div class="review-actions">
+                                        <span>Hữu ích?</span> <button class="btn-text"><i
+                                                class="fa-regular fa-thumbs-up"></i> Có (124)</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <img src="../srouce/Lê Văn C.png" alt="User" class="user-avatar">
+                                <div class="review-content">
+                                    <h4>Lê Văn C</h4>
+                                    <div class="user-rating">★★★★★ <span class="review-date">1 tháng trước</span></div>
+                                    <p>Mình là người chuyển nghề sang IT, khóa học này giúp mình rất nhiều. Nội dung cập
+                                        nhật, bài tập thực tế. Sau 3 tháng học, mình đã apply được vị trí Junior
+                                        Developer.
+                                        Cảm ơn thầy và Rikkei Education!</p>
+                                    <div class="review-actions">
+                                        <span>Hữu ích?</span> <button class="btn-text"><i
+                                                class="fa-regular fa-thumbs-up"></i> Có (98)</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <img src="../srouce/Phạm Thị D.png" alt="User" class="user-avatar">
+                                <div class="review-content">
+                                    <h4>Phạm Thị D</h4>
+                                    <div class="user-rating">★★★★★ <span class="review-date">1 tháng trước</span></div>
+                                    <p>Khóa học tuyệt vời! Giảng viên nhiệt tình, support nhanh. Nội dung từ cơ bản đến
+                                        nâng
+                                        cao, phù hợp cho người mới. Mình đã làm được 3 dự án và đang freelance kiếm thêm
+                                        thu
+                                        nhập.</p>
+                                    <div class="review-actions">
+                                        <span>Hữu ích?</span> <button class="btn-text"><i
+                                                class="fa-regular fa-thumbs-up"></i> Có (56)</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline btn-block" style="margin-top: 20px;">Xem thêm đánh giá</button>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="sidebar-box related-courses">
+                        <h3>Khóa học liên quan</h3>
+
+                        <div class="related-item">
+                            <img src="../srouce/UX Design.png" alt="Course" class="related-img">
+                            <div class="related-info">
+                                <h4>UI/UX Design Chuyên Nghiệp</h4>
+                                <div class="related-meta">
+                                    <span><i class="fa-solid fa-star text-warning"></i> 4.8</span>
+                                    <span class="price">1,499,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <img src="../srouce/b3ec08b817f4dd4134430c68fdfb85a09093e881.jpg" alt="Course" class="related-img">
+                            <div class="related-info">
+                                <h4>Phát Triển Ứng Dụng Di Động</h4>
+                                <div class="related-meta">
+                                    <span><i class="fa-solid fa-star text-warning"></i> 4.7</span>
+                                    <span class="price">2,299,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="related-item">
+                            <img src="../srouce/b900fb524fb3a38700cb822a83fa12691b6c5d48.jpg" alt="Course" class="related-img">
+                            <div class="related-info">
+                                <h4>Machine Learning Cơ Bản</h4>
+                                <div class="related-meta">
+                                    <span><i class="fa-solid fa-star text-warning"></i> 4.9</span>
+                                    <span class="price">2,799,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-box share-course">
+                        <h3>Chia sẻ khóa học</h3>
+                        <div class="share-buttons">
+                            <button class="btn btn-facebook btn-block mb-2"><i class="fa-brands fa-facebook-f"></i>
+                                Facebook</button>
+                            <button class="btn btn-twitter btn-block mb-2"><i class="fa-brands fa-twitter"></i>
+                                Twitter</button>
+                            <button class="btn btn-linkedin btn-block mb-2"><i class="fa-brands fa-linkedin-in"></i>
+                                LinkedIn</button>
+                        </div>
+                        <div class="copy-link">
+                            <button class="btn btn-light btn-block">Sao chép link</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-info">
+                    <p>Nền tảng học trực tuyến hàng đầu Việt Nam, mang đến kiến thức chất lượng cho mọi người.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Khóa học</h4>
+                        <ul>
+                            <li><a href="#">Lập trình</a></li>
+                            <li><a href="#">Thiết kế</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Kinh doanh</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Về chúng tôi</h4>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Giảng viên</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Hỗ trợ</h4>
+                        <ul>
+                            <li><a href="#">Trung tâm trợ giúp</a></li>
+                            <li><a href="#">Điều khoản</a></li>
+                            <li><a href="#">Chính sách</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>© 2026 Rikkei Education. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
